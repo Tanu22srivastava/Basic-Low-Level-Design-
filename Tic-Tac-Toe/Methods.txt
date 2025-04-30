@@ -1,0 +1,41 @@
+Basic:
+--------------------------------------------------------------------------------------
+Player:
+--------------------------------------------------------------------------------------
+Attributes:
+- symbol: str ('X' or 'O')
+
+Methods:
+- (None for now; maybe get_move later if we handle input per player)
+
+---------------------------------------------------------------------------------------
+Board:
+---------------------------------------------------------------------------------------
+Attributes:
+- size: int (default 3)
+- grid: List[List[str]] (3x3 matrix initialized with empty strings)
+
+Methods:
+- display(): void → prints the board
+- place_move(row: int, col: int, symbol: str) → bool:
+    Places the symbol if the cell is empty, returns success/failure.
+- is_valid_move(row: int, col: int) → bool:
+    Returns true if move is inside bounds and cell is empty.
+- check_winner(symbol: str) → bool:
+    Returns true if that symbol has won.
+- is_full() → bool:
+    Returns true if the board is full.
+
+---------------------------------------------------------------------------------------
+Game:
+---------------------------------------------------------------------------------------
+
+Attributes:
+- player1: Player
+- player2: Player
+- board: Board
+- current_player: Player
+
+Methods:
+- switch_turn(): void
+- start(): void → contains main game loop
