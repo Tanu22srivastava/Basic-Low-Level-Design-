@@ -1,0 +1,17 @@
+Functional Requirements (Basic File System):
+
+Create File - Create a file under a directory.
+
+Create Folder - Create a directory/folder under a parent folder.
+
+List Contents - List files/folders in a given directory.
+
+Delete File/Folder - Delete a file or an entire directory (recursively).
+
+Move File/Folder - Move a file/folder from one directory to another.
+
+Search - Search files/folders by name.
+
+Path - Get the full path of a file/folder.
+
+Size - Return the size of a file/folder (folder size = sum of contents).
